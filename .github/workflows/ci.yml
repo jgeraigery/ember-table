@@ -29,7 +29,7 @@ jobs:
 
       - name: Node Modules Cache
         id: cache-npm
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: '**/node_modules'
           key: ci-yarn-${{ hashFiles('**/yarn.lock') }}
@@ -91,7 +91,7 @@ jobs:
 
       - name: Node Modules Cache
         id: cache-npm
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: |
             node_modules
